@@ -1,0 +1,28 @@
+.marque {
+  white-space: nowrap;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  position: absolute;
+  background-color: #0f4536;
+}
+
+.marque span {
+  display: inline-block;
+  animation: marquee 100s linear infinite;
+  padding-inline: 2rem;
+}
+.marque span span {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
