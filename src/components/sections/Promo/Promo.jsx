@@ -4,8 +4,8 @@ import "./Promo.css";
 const Promo = () => {
   return (
     <>
-      {/* <div className="bg-primaryClr marque py-3">
-        <span className="font-medium text-md">
+      <div className="bg-primaryClr relative marquee overflow-hidden py-3 h-[40px] flex items-center">
+        <span className="text-color3 absolute flex gap-14">
           <span className="text-[14px]">
             Core collection available now | get free shipping on orders over
             $200
@@ -63,9 +63,6 @@ const Promo = () => {
             $200
           </span>
         </span>
-      </div> */}
-      <div className="bg-red-500">
-        <h1>11111</h1>
       </div>
     </>
   );
