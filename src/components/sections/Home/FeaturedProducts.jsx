@@ -7,26 +7,29 @@ const FeaturedProducts = () => {
   return (
     <div>
       <div className="wrapper py-16">
-        <h1 className="font-[Melodrama] pb-16 text-color4 font-normal m-auto w-[600px] text-6xl ">
+        <h1
+          className="font-[Melodrama] pb-16 text-color4 font-normal m-auto text-center
+         max-w-[600px] sm:text-6xl text-5xl leading-16"
+        >
           {title}
         </h1>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4">
           {List.map((item, i) => {
             return (
               <div key={i} className="text-center ">
-                <div className="imageProduct relative cursor-pointer h-[300px]">
-                  <img
-                    src={item.backImage}
-                    alt="backImage"
-                    className="backImage duration-300 absolute top-0"
-                  />
+                <div className="h-[380px] relative cursor-pointer">
                   <img
                     src={item.productImage}
                     alt="productImage"
-                    className="productImage hover:opacity-0 duration-300 absolute top-0 w-full"
+                    className="hover:opacity-0 z-[20] duration-300 h-[380px] w-full object-cover absolute top-0 left-0"
+                  />
+                  <img
+                    src={item.backImage}
+                    alt="productImage"
+                    className="hover:opacity-0 h-[380px] duration-300 w-full object-cover absolute top-0 left-0"
                   />
                 </div>
-                <h1 className="text-[20px] font-normal pt-9">{item.name}</h1>
+                <h1 className="text-[20px] font-medium pt-9 ">{item.name}</h1>
                 <h3 className="text-4xl font-[Melodrama] pt-3 text-primaryClr">
                   $ {item.price} USD
                 </h3>

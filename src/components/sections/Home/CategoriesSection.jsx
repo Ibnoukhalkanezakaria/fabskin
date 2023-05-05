@@ -6,17 +6,25 @@ const CategoriesSection = () => {
   return (
     <div className="py-10 wrapper">
       <div className="flex items-center">
-        <div className="w-[400px]">
-          <h3 className="font-[Melodrama] text-4xl font-medium text-color4 leading-10">
+        <div className="w-[500px]">
+          <h3 className="leading-14 font-[Melodrama] text-5xl font-normal text-color4">
             Shop by Categories
           </h3>
         </div>
-        <div className="grid-cols-3 grid gap-6">
+        <div className="grid-cols-3 grid gap-6 cursor-pointer ">
           {List.map((e, i) => {
             return (
-              <div key={i}>
-                <img src={e.image} alt="image" className="rounded-b-[50%]" />
-                <h3 className="uppercase text-center pt-6">{e.name}</h3>
+              <div key={i} className=" ">
+                <div className="overflow-hidden rounded-b-[50%]">
+                  <img
+                    src={e.image}
+                    alt="image"
+                    className="hover:scale-110 duration-300 rounded-b-[50%]"
+                  />
+                </div>
+                <h3 className="uppercase text-center pt-6 text-color4 font-medium">
+                  {e.name}
+                </h3>
               </div>
             );
           })}
