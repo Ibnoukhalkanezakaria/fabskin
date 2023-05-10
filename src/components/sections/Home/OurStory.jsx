@@ -5,7 +5,7 @@ import shape from "../../../assets/Home/shape-2.svg";
 const OurStory = () => {
   return (
     <div>
-      <div className="wrapper gap-10 my-20 bg-color3 flex md:flex-nowrap flex-wrap py-[80px] px-16 justify-between items-center relative">
+      <div className="wrapper gap-10 my-20 bg-color3 flex md:flex-nowrap flex-wrap py-[80px] sm:px-16 px-6 justify-between items-center relative">
         <div>
           <h3 className="text-color4 font-[Melodrama] font-normal text-5xl">
             Our Story

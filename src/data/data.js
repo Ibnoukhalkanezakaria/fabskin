@@ -44,6 +44,24 @@ export const navBar = {
       href: "/contactUs",
     },
   ],
+  Pages: [
+    {
+      name: "Privacy Policy",
+      href: "/",
+    },
+    {
+      name: "Instructions",
+      href: "/",
+    },
+    {
+      name: "Error 404",
+      href: "/error",
+    },
+    {
+      name: "Password Protected",
+      href: "/password",
+    },
+  ],
 };
 
 export const NaturalSectionData = {

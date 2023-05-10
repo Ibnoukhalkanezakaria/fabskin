@@ -11,11 +11,11 @@ const Home = () => {
   return (
     <div>
       <HeroHome />
-      {/* <NaturalSection /> */}
+      <NaturalSection />
       <FabVitamin />
       <FeaturedProducts />
       <OurStory />
-      {/* <GenerateSection /> */}
+      <GenerateSection />
       <CategoriesSection />
     </div>
   );

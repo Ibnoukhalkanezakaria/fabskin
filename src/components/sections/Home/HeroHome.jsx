@@ -10,7 +10,7 @@ const HeroHome = () => {
           <h1 className="sm:leading-[80px] font-[Melodrama] text-primaryClr font-normal sm:text-7xl text-5xl">
             Look within yourself and discover
           </h1>
-          <p className="max-w-[400px] leading-5 font-normal">
+          <p className="max-w-[400px] leading-6 font-normal">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when.
           </p>

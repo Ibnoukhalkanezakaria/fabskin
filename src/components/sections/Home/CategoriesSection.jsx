@@ -4,14 +4,14 @@ import { CategoriesSectionData } from "../../../data/data";
 const CategoriesSection = () => {
   const { List } = CategoriesSectionData;
   return (
-    <div className="py-10 wrapper">
-      <div className="flex items-center">
+    <div className="py-20 wrapper">
+      <div className="flex items-center lg:flex-nowrap gap-8 flex-wrap">
         <div className="w-[500px]">
-          <h3 className="leading-14 font-[Melodrama] text-5xl font-normal text-color4">
+          <h3 className="leading-14 font-[Melodrama] sm:text-5xl text-4xl font-normal text-color4">
             Shop by Categories
           </h3>
         </div>
-        <div className="grid-cols-3 grid gap-6 cursor-pointer ">
+        <div className="grid sm:grid-cols-3 gap-10 cursor-pointer ">
           {List.map((e, i) => {
             return (
               <div key={i} className=" ">
@@ -22,7 +22,7 @@ const CategoriesSection = () => {
                     className="hover:scale-110 duration-300 rounded-b-[50%]"
                   />
                 </div>
-                <h3 className="uppercase text-center pt-6 text-color4 font-medium">
+                <h3 className="uppercase text-center pt-6 text-color4 font-normal">
                   {e.name}
                 </h3>
               </div>
