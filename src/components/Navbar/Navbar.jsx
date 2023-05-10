@@ -7,7 +7,7 @@ import Search from "./Search";
 const Navbar = () => {
   return (
     <>
-      {/* <Promo /> */}
+      <Promo />
       <Navlinks />
       <Search />
     </>

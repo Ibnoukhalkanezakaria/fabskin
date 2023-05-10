@@ -1,5 +1,6 @@
 .marquee {
   white-space: nowrap;
+  z-index: 9999;
 }
 
 .marquee span {
