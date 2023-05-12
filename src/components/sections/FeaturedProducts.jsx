@@ -1,6 +1,6 @@
 import React from "react";
-import { FeaturedProductsData } from "../../../data/data";
-import PrimaryButton from "../Button/PrimaryButton";
+import { FeaturedProductsData } from "../../data/data";
+import PrimaryButton from "./Button/PrimaryButton";
 
 const FeaturedProducts = () => {
   const { List, title } = FeaturedProductsData;
@@ -16,7 +16,7 @@ const FeaturedProducts = () => {
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4">
           {List.map((item, i) => {
             return (
-              <div key={i} className="text-center ">
+              <div key={i} className="text-center mb-10">
                 <div className="h-[380px] relative cursor-pointer">
                   <img
                     src={item.productImage}

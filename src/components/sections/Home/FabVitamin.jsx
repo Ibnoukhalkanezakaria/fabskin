@@ -1,5 +1,5 @@
 import React from "react";
-import fabImage from "../../../assets/Home/fab-image.jpg";
+import fabImage from "../../../assets/imgs/fab-image.jpg";
 import PrimaryButton from "../Button/PrimaryButton";
 
 const FabVitamin = () => {

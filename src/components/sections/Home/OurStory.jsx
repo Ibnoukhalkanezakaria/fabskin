@@ -1,6 +1,6 @@
 import React from "react";
-import OurStoryImage from "../../../assets/Home/story.jpg";
-import shape from "../../../assets/Home/shape-2.svg";
+import OurStoryImage from "../../../assets/imgs/story.jpg";
+import shape from "../../../assets/imgs/shape-2.svg";
 
 const OurStory = () => {
   return (

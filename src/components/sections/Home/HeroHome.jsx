@@ -1,7 +1,7 @@
 import React from "react";
-import HeroImage from "../../../assets/Home/hero-image.jpg";
+import HeroImage from "../../../assets/imgs/hero-image.jpg";
 import PrimaryButton from "../Button/PrimaryButton";
-import shape from "../../../assets/Home/shape-1.svg";
+import shape from "../../../assets/imgs/shape-1.svg";
 import { Link } from "react-router-dom";
 
 const HeroHome = () => {
