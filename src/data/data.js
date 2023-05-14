@@ -34,7 +34,9 @@ import client4 from "../assets/imgs/client-04.svg";
 
 // CategoriesSectionData
 import CategorieImage1 from "../assets/imgs/category-01.jpg";
+
 import CategorieImage2 from "../assets/imgs/category-02.jpg";
+
 import CategorieImage3 from "../assets/imgs/category-03.jpg";
 
 export const navBar = {
@@ -99,6 +101,7 @@ export const FeaturedProductsData = {
     {
       name: "Alpha Arbutin & Vitamin C",
       price: 120.0,
+      category: ["Face wash", "Night Cream"],
       lastPrice: 209.0,
       productImage: productImage1,
       backImage: backProduct1,
@@ -106,6 +109,7 @@ export const FeaturedProductsData = {
     {
       name: "Firming Lift Eye Gel",
       price: 80.0,
+      category: ["Body Wash", "Serums"],
       lastPrice: 129.0,
       productImage: productImage2,
       backImage: backProduct2,
@@ -113,6 +117,7 @@ export const FeaturedProductsData = {
     {
       name: "Vitamin C Serum",
       price: 20.0,
+      category: ["Face wash", "Night Cream"],
       lastPrice: 16.0,
       productImage: productImage3,
       backImage: backProduct3,
@@ -120,6 +125,7 @@ export const FeaturedProductsData = {
     {
       name: "Vinegar Face Moisturizer",
       price: 110.0,
+      category: ["Body Wash", "Night Cream"],
       lastPrice: 149.0,
       productImage: productImage4,
       backImage: backProduct4,
@@ -127,6 +133,7 @@ export const FeaturedProductsData = {
     {
       name: "Vitamin C Clay Face Mask",
       price: 99.0,
+      category: ["Body Wash", "Serums"],
       lastPrice: 123.0,
       productImage: productImage5,
       backImage: backProduct5,
@@ -134,6 +141,7 @@ export const FeaturedProductsData = {
     {
       name: "Vitamin C Hand & Nail Cream",
       price: 65.0,
+      category: ["Cleanser"],
       lastPrice: 99.0,
       productImage: productImage6,
       backImage: backProduct6,
@@ -141,6 +149,7 @@ export const FeaturedProductsData = {
     {
       name: "Sunscreen Matte Finish",
       price: 14.0,
+      category: ["Body Wash", "Face wash"],
       lastPrice: 20.0,
       productImage: productImage7,
       backImage: backProduct7,
@@ -148,6 +157,7 @@ export const FeaturedProductsData = {
     {
       name: "10 In 1 Active Miracle",
       price: 89.0,
+      category: ["Night Cream"],
       lastPrice: 123.0,
       productImage: productImage8,
       backImage: backProduct8,
@@ -155,6 +165,7 @@ export const FeaturedProductsData = {
     {
       name: "Anti Acne Face Serum",
       price: 66.0,
+      category: ["Serums", "Night Cream"],
       lastPrice: 89.0,
       productImage: productImage9,
       backImage: backProduct9,
@@ -162,6 +173,7 @@ export const FeaturedProductsData = {
     {
       name: "Brightening Face Wash",
       price: 10.0,
+      category: ["Face wash", "Serums"],
       lastPrice: 18.0,
       productImage: productImage10,
       backImage: backProduct10,
