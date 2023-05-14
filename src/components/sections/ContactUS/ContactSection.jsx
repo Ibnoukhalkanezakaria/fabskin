@@ -5,7 +5,7 @@ import Map from "./Map";
 const ContactSection = () => {
   return (
     <div>
-      <div className="w-[700px] m-auto pt-[120px] ">
+      <div className="w-[800px] m-auto pt-[120px] ">
         <h3 className="leading-10 font-[Melodrama] pb-9 text-color4 text-3xl font-medium">
           You may also fill out the form below and we will respond as quickly as
           possible.
