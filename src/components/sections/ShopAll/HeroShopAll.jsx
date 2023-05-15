@@ -1,32 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { FeaturedProductsData } from "../../../data/data";
+import { NavLink } from "react-router-dom";
+import { useGetStarted } from "../../../Context/Context";
 
 const HeroShopAll = () => {
-  const { List } = FeaturedProductsData;
-
-  const [data, setData] = useState([]);
-  const [collection, setCollection] = useState([]);
-
-  const newCategory = List.map((e) => e.category);
-
-  let loop = [];
-  let uniqueNames;
-  let array;
-
-  for (let i = 0; i < newCategory.length; i++) {
-    array = newCategory[i];
-    for (let j = 0; j < array.length; j++) {
-      uniqueNames = loop.filter((e, i) => {
-        return loop.indexOf(e) === i;
-      });
-      loop.push(array[j]);
-    }
-  }
-  useEffect(() => {
-    setData(List);
-    setCollection(uniqueNames);
-  }, []);
+  const { categories } = useGetStarted();
 
   return (
     <div className="bg-color3 py-[100px] text-center">
@@ -39,14 +16,10 @@ const HeroShopAll = () => {
             Shop by category:
           </span>
         </div>
-        {uniqueNames.map((e, i) => {
+        {categories.map((e, i) => {
           return (
-            <div
-              onClick={() => filterProduct(item)}
-              key={i}
-              className="hover:underline cursor-pointer text-lg"
-            >
-              {e}
+            <div key={i} className="hover:underline cursor-pointer text-lg">
+              <NavLink to={`/category/${e}`}>{e}</NavLink>
             </div>
           );
         })}

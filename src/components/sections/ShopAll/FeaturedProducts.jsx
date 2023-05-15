@@ -1,18 +1,12 @@
 import React from "react";
-import { FeaturedProductsData } from "../../data/data";
-import PrimaryButton from "./Button/PrimaryButton";
+import { FeaturedProductsData } from "../../../data/data";
+import PrimaryButton from "../Button/PrimaryButton";
 
 const FeaturedProducts = () => {
-  const { List, title } = FeaturedProductsData;
+  const { List } = FeaturedProductsData;
   return (
     <div>
-      <div className="wrapper py-16">
-        <h1
-          className="font-[Melodrama] pb-16 text-color4 font-normal m-auto text-center
-         max-w-[600px] sm:text-6xl text-5xl leading-16"
-        >
-          {title}
-        </h1>
+      <div className="wrapper">
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4">
           {List.map((item, i) => {
             return (
