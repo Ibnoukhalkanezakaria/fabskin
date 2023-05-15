@@ -2,7 +2,7 @@ import React from "react";
 import { FeaturedProductsData } from "../../../data/data";
 import PrimaryButton from "../Button/PrimaryButton";
 
-const FeaturedProducts = ({ num }) => {
+const FeaturedProducts = ({ num, products }) => {
   const { List } = FeaturedProductsData;
   return (
     <div>

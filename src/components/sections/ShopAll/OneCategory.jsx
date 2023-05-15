@@ -10,9 +10,9 @@ const OneCategory = () => {
   return (
     <div>
       <h1>{OneCategory}</h1>
-      {filterProduct.map((item, i) => {
+      {/* {filterProduct.map((item, i) => {
         return <div key={i}>{item.name}</div>;
-      })}
+      })} */}
     </div>
   );
 };
