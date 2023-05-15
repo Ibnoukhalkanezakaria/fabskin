@@ -1,5 +1,5 @@
 import React from "react";
-import { FeaturedProductsData } from "../../data/data";
+import { FeaturedProductsData } from "../../../data/data";
 
 const OurFeuturedTitle = () => {
   const { title } = FeaturedProductsData;

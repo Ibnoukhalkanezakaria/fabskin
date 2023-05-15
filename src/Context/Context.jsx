@@ -6,11 +6,7 @@ const GetStartedContext = createContext({});
 const GetStartedProvider = ({ children }) => {
   const { List } = FeaturedProductsData;
 
-  const [data, setData] = useState([]);
-  const [collection, setCollection] = useState([]);
-
   const newCategory = List.map((e) => e.category);
-
   let loop = [];
   let categories;
   let array;
@@ -25,7 +21,7 @@ const GetStartedProvider = ({ children }) => {
     }
   }
   return (
-    <GetStartedContext.Provider value={{ categories, List, newCategory }}>
+    <GetStartedContext.Provider value={{ categories, List }}>
       {children}
     </GetStartedContext.Provider>
   );

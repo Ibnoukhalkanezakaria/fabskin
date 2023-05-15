@@ -2,7 +2,7 @@ import React from "react";
 import { FeaturedProductsData } from "../../../data/data";
 import PrimaryButton from "../Button/PrimaryButton";
 
-const FeaturedProducts = () => {
+const FeaturedProducts = ({ num }) => {
   const { List } = FeaturedProductsData;
   return (
     <div>
@@ -35,7 +35,7 @@ const FeaturedProducts = () => {
                 </PrimaryButton>
               </div>
             );
-          })}
+          }).slice(0, `${num}`)}
         </div>
       </div>
     </div>
